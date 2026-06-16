@@ -1,7 +1,5 @@
-use nginx:alphibne
-COPY .app.html usr/share/nginx/latest/html/app.html
+FROM nginx:alpine
+
+COPY app.html /usr/share/nginx/html/index.html
+
 EXPOSE 80
-
-
-
-
